@@ -100,9 +100,9 @@ body {
 main {
   background-color: var(--white);
   padding: 2.5rem;
-  margin: 1.25rem 2rem;
+  margin: 8rem 2rem 1.25rem;
   border-radius: 1.5rem;
-  max-width: 736px;
+  max-width: 46rem;
 }
 
 h1,
