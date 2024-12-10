@@ -1,0 +1,280 @@
+:root {
+  --white: #fff;
+  --rose-50: #fff7fb;
+  --rose-800: #7a284e;
+  --stone-100: #f3e5d7;
+  --stone-150: #e3ddd7;
+  --stone-600: #5f564d;
+  --stone-900: #312e2c;
+  --brown-800: #854632;
+}
+
+/* Reset Styles */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+ol {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* recipe page styles */
+body {
+  font-family: "Outfit", serif;
+  background-color: var(--stone-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+}
+
+main {
+  background-color: var(--white);
+  padding: 2.5rem;
+  margin: 1.25rem 2rem;
+  border-radius: 1.5rem;
+  max-width: 736px;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+}
+
+.recipe__line {
+  border: 0;
+  border-top: 1px solid var(--stone-150);
+  margin: 2rem 0;
+}
+
+.recipe__ingredients .recipe__ingredients--heading,
+.recipe__instructions .recipe__instructions--heading,
+.recipe__nutrition .recipe__nutrition--heading {
+  color: var(--brown-800);
+  padding-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+/* recipe omelette */
+.omelette__desktop {
+  border-radius: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.omelette__mobile {
+  display: none;
+}
+
+.recipe__omelette .recipe__omelette--heading {
+  font-size: 2.5rem;
+  color: var(--stone-900);
+  padding-bottom: 1.5rem;
+}
+
+.recipe__omelette .recipe__omelette--description {
+  font-size: 1rem;
+  color: var(--stone-600);
+  padding-bottom: 2rem;
+}
+
+/* recipe preparation */
+.recipe__preparation {
+  background-color: var(--rose-50);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.recipe__preparation .recipe__preparation--heading {
+  color: var(--rose-800);
+  padding-bottom: 1rem;
+}
+
+.recipe__preparation .recipe__preparation--steps {
+  padding-left: 1rem;
+}
+
+.recipe__preparation .recipe__preparation--steps li {
+  list-style: disc;
+  color: var(--stone-600);
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.recipe__preparation .recipe__preparation--steps li span {
+  font-weight: bold;
+}
+
+.recipe__preparation .recipe__preparation--steps li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.recipe__preparation .recipe__preparation--steps li::marker {
+  color: var(--rose-800);
+}
+
+/* recipe ingredients */
+.recipe__ingredients--steps {
+  padding-left: 1rem;
+}
+
+.recipe__ingredients--steps li {
+  list-style-type: disc;
+  color: var(--stone-600);
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.recipe__ingredients--steps li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.recipe__ingredients--steps li::marker {
+  color: var(--brown-800);
+}
+
+/* recipe instructions */
+.recipe__instructions--steps {
+  padding-left: 1rem;
+}
+
+.recipe__instructions--steps li {
+  padding-left: 1rem;
+  list-style-type: number;
+  color: var(--stone-600);
+  font-size: 1rem;
+}
+
+.recipe__instructions--steps li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.recipe__instructions--steps li span {
+  font-weight: bold;
+}
+
+.recipe__instructions--steps li::marker {
+  color: var(--brown-800);
+  font-weight: bold;
+}
+
+.recipe__nutrition--description {
+  color: var(--stone-600);
+  font-size: 1rem;
+  padding-bottom: 0.75rem;
+}
+
+.recipe__nutrition--steps li {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 1rem;
+}
+
+.recipe__nutrition--steps li .recipe__nutrition--name {
+  width: 45%;
+  margin-left: auto;
+  color: var(--stone-600);
+}
+
+.recipe__nutrition--steps li .recipe__nutrition--value {
+  width: 50%;
+  color: var(--brown-800);
+  font-weight: bold;
+}
+
+.recipe__nutrition--steps li:not(:last-child) {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: var(--white);
+  }
+
+  .omelette__desktop {
+    display: none;
+  }
+
+  .omelette__mobile {
+    display: block;
+  }
+
+  main {
+    padding: 2.5rem 2rem;
+    margin: 0;
+  }
+
+  .recipe__omelette .recipe__omelette--heading {
+    font-size: 36px;
+  }
+}
