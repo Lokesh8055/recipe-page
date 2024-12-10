@@ -6,8 +6,8 @@
 
 ### Links
 
-- [Solution](https://github.com/Lokesh8055/social-link-profile)
-- [LiveSite](https://social-link-profile-lp.netlify.app)
+- [Solution](https://github.com/Lokesh8055/recipe-page)
+- [LiveSite](https://lp-recipe-page.netlify.app)
 
 ### Screenshot
 
@@ -43,4 +43,4 @@ Will continue my focus on responsive web design principles in next projects
 
 ## Author
 
-- Frontend Mentor - [@Lokesh8055](https://www.frontendmentor.io/profile/Lokesh8055)
+Frontend Mentor - [@Lokesh8055](https://www.frontendmentor.io/profile/Lokesh8055)
